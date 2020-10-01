@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Olá, mundo!</title>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <div class="jumbotron">
+        <button class="btn btn-primary" onclick="mostrar_data_hora()">Mostrar data e hora</button>
+        <h1 id="datahora"></h1>
+    </div>
+    <div class="jumbotron">
+        <button class="btn btn-primary" onclick="incrementar_contador()">Contador</button>
+        <h1 id="contador"></h1>
+    </div>
+    <div class="jumbotron" id="jumbo-botao">
+        <button class="btn btn-danger" id="botao-vermelho" onclick="excluir_botao()">Excluir botao</button>
+    </div>
+
+    <div class="jumbotron" id="jumbo-criar-botao">
+        <button class="btn btn-danger" id="criar-botao" onclick="criar_botao()">Criar botao</button>
+    </div>
+
+    <div class="jumbotron" id="nota-aluno">
+        <input type="text" id="n1" value="">
+        <input type="text" id="n2" value="">
+        <input type="text" id="n3" value="">
+        <button class="btn btn-primary" id="calcular" onclick="calcular_nota()">Calcular nota</button>
+        <h1 id="media"></h1>
+    </div>
+
+    <div class="jumbotron" id="jumbo-tabuada">
+        <input type="text" id="n5" value="">
+        <button class="btn btn-primary" id="calcular-t" onclick="calcular_tabuada()">Calcular tabuada</button>
+    </div>
+
+    <div class="jumbotron" id="idade-nadador">
+        <input type="text" id="idade" value="">
+        <button class="btn btn-primary" id="botao-classe" onclick="idade_nadador()">Calcular classe</button>
+        <h1 id="classe"></h1>
+    </div>
+
+    <div class="jumbotron" id="natacao-finalista">
+        <input type="text" id="t1" value="">
+        <input type="text" id="t2" value="">
+        <input type="text" id="t3" value="">
+        <button class="btn btn-primary" id="calcular-posicao" onclick="finalistas()">Calcular nota</button>
+        <h1 id="medalhas"></h1>
+        <img src="./imagens/" alt="">
+    </div>
+
+    <div class="jumbotron" id="jumbo-album">
+        <button class="btn btn-primary" id=album-1 onclick="montar_album()">mostra album</button>
+    </div>
+    <!-- <div class="jumbotron" id="jumbo-criar-botao10">
+        <button class="btn btn-danger" id="criar-botao10" onclick="criar_botao10()">Criar botao10</button>
+    </div>
+    <div class="jumbotron" id="codigo-php">
+        <pre><code id="teste">{
+        "info": {
+            "_postman_id": "732239b5-ba94-45fe-a7fc-457a02df160b",
+            "name": "Collection CRUD cliente",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+        },
+        "item": [
+            {
+                "name": "Inserir cliente",
+                "protocolProfileBehavior": {
+                    "disabledSystemHeaders": {
+                        "connection": true,
+                        "accept-encoding": true,
+                        "accept": true,
+                        "user-agent": true
+                    }
+                },
+                "request": {
+                    "auth": {
+                        "type": "basic",
+                        "basic": [
+                            {
+                                "key": "password",
+                                "value": "token após o \" : \"",
+                                "type": "string"
+                            },
+                            {
+                                "key": "username",
+                                "value": "id do usuario API",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "method": "POST",
+                    "header": [
+                        {
+                            "key": "ixcsoft",
+                            "value": "",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Host",
+                            "value": "HOST.com.br",
+                            "type": "text",
+                            "disabled": true
+                        }
+                    ],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\n    \"razao\": \"\",\n    \"fantasia\": \"\",\n    \"tipo_assinante\": \"3\",\n    \"id_tipo_cliente\": \"\",\n    \"tipo_pessoa\": \"F\",\n    \"cnpj_cpf\": \"\",\n    \"ie_identidade\": \"\",\n    \"rg_orgao_emissor\": \"\",\n    \"inscricao_municipal\": \"\",\n    \"contribuinte_icms\": \"N\",\n    \"nacionalidade\": \"Brasileiro\",\n    \"cidade_naturalidade\": \"\",\n    \"estado_nascimento\": \"\",\n    \"data_nascimento\": \"\",\n    \"estado_civil\": \"\",\n    \"isuf\": \"\",\n    \"ativo\": \"S\",\n    \"filial_id\": \"\",\n    \"Sexo\": \"\",\n    \"profissao\": \"\",\n    \"grau_satisfacao\": \"\",\n    \"idx\": \"\",\n    \"data_cadastro\": \"\",\n    \"tipo_cliente_scm\": \"01\",\n    \"convert_cliente_forn\": \"N\",\n    \"ativo_serasa\": \"\",\n    \"permite_armazenar_cartoes\": \"N\",\n    \"id_condominio\": \"\",\n    \"bloco\": \"\",\n    \"apartamento\": \"\",\n    \"cep\": \"\",\n    \"cif\": \"\",\n    \"endereco\": \"\",\n    \"numero\": \"\",\n    \"complemento\": \"\",\n    \"bairro\": \"\",\n    \"cidade\": \"\",\n    \"referencia\": \"\",\n    \"moradia\": \"\",\n    \"latitude\": \"\",\n    \"longitude\": \"\",\n    \"cep_cob\": \"\",\n    \"endereco_cob\": \"\",\n    \"numero_cob\": \"\",\n    \"bairro_cob\": \"\",\n    \"cidade_cob\": \"\",\n    \"complemento_cob\": \"\",\n    \"referencia_cob\": \"\",\n    \"fone\": \"\",\n    \"telefone_comercial\": \"\",\n    \"id_operadora_celular\": \"\",\n    \"telefone_celular\": \"\",\n    \"whatsapp\": \"\",\n    \"ramal\": \"\",\n    \"email\": \"\",\n    \"email_opa\": \"\",\n    \"contato\": \"\",\n    \"website\": \"\",\n    \"skype\": \"\",\n    \"hotsite_email\": \"\",\n    \"senha\": \"\",\n    \"acesso_automatico_central\": \"P\",\n    \"hotsite_acesso\": \"2\",\n    \"crm\": \"N\",\n    \"id_candato_tipo\": \"\",\n    \"id_concorrente\": \"\",\n    \"id_perfil\": \"\",\n    \"responsavel\": \"\",\n    \"status_prospeccao\": \"C\",\n    \"crm_data_novo\": \"\",\n    \"crm_data_sondagem\": \"\",\n    \"crm_data_apresentando\": \"\",\n    \"crm_data_negociando\": \"\",\n    \"crm_data_vencemos\": \"\",\n    \"crm_data_perdemos\": \"\",\n    \"crm_data_abortamos\": \"\",\n    \"crm_data_sem_porta_disponivel\": \"\",\n    \"crm_data_sem_viabilidade\": \"\",\n    \"pipe_id_organizacao\": \"\",\n    \"foto_cartao\": \"\",\n    \"participa_cobranca\": \"S\",\n    \"num_dias_cob\": \"\",\n    \"participa_pre_cobranca\": \"S\",\n    \"cob_envia_email\": \"S\",\n    \"cob_envia_sms\": \"S\",\n    \"id_conta\": \"\",\n    \"cond_pagamento\": \"\",\n    \"id_vendedor\": \"\",\n    \"tabela_preco\": \"\",\n    \"deb_automatico\": \"\",\n    \"deb_agencia\": \"\",\n    \"deb_conta\": \"\",\n    \"codigo_operacao\": \"\",\n    \"tipo_pessoa_titular_conta\": \"F\",\n    \"cnpj_cpf_titular_conta\": \"\",\n    \"ultima_atualizacao\": \"CURRENT_TIMESTAMP\",\n    \"emp_empresa\": \"\",\n    \"emp_cnpj\": \"\",\n    \"emp_cep\": \"\",\n    \"emp_endereco\": \"\",\n    \"emp_cidade\": \"\",\n    \"emp_fone\": \"\",\n    \"emp_cargo\": \"\",\n    \"emp_remuneracao\": \"\",\n    \"emp_data_admissao\": \"\",\n    \"nome_pai\": \"\",\n    \"cpf_pai\": \"\",\n    \"identidade_pai\": \"\",\n    \"nascimento_pai\": \"\",\n    \"nome_mae\": \"\",\n    \"cpf_mae\": \"\",\n    \"identidade_mae\": \"\",\n    \"nascimento_mae\": \"\",\n    \"quantidade_dependentes\": \"\",\n    \"nome_conjuge\": \"\",\n    \"fone_conjuge\": \"\",\n    \"cpf_conjuge\": \"\",\n    \"rg_conjuge\": \"\",\n    \"data_nascimento_conjuge\": \"\",\n    \"nome_contador\": \"\",\n    \"telefone_contador\": \"\",\n    \"orgao_publico\": \"N\",\n    \"im\": \"\",\n    \"nome_representante_1\": \"\",\n    \"cpf_representante_1\": \"\",\n    \"identidade_representante_1\": \"\",\n    \"nome_representante_2\": \"\",\n    \"cpf_representante_2\": \"\",\n    \"identidade_representante_2\": \"\",\n    \"iss_classificacao_padrao\": \"99\",\n    \"pis_retem\": \"S\",\n    \"cofins_retem\": \"S\",\n    \"csll_retem\": \"S\",\n    \"irrf_retem\": \"S\",\n    \"cli_desconta_iss_retido_total\": \"S\",\n    \"ref_com_empresa1\": \"\",\n    \"ref_com_fone1\": \"\",\n    \"ref_com_empresa2\": \"\",\n    \"ref_com_fone2\": \"\",\n    \"ref_pes_nome1\": \"\",\n    \"ref_pes_fone1\": \"\",\n    \"ref_pes_nome2\": \"\",\n    \"ref_pes_fone2\": \"\",\n    \"obs\": \"\",\n    \"alerta\": \"\" \n}",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "https://HOST/webservice/v1/cliente",
+                        "protocol": "https",
+                        "host": [
+                            "HOST"
+                        ],
+                        "path": [
+                            "webservice",
+                            "v1",
+                            "cliente"
+                        ]
+                    }
+                },
+                "response": []
+            },
+            {
+                "name": "Deletar cliente",
+                "protocolProfileBehavior": {
+                    "disabledSystemHeaders": {
+                        "connection": true,
+                        "accept-encoding": true,
+                        "accept": true,
+                        "user-agent": true
+                    }
+                },
+                "request": {
+                    "auth": {
+                        "type": "basic",
+                        "basic": [
+                            {
+                                "key": "password",
+                                "value": "token após o \" : \"",
+                                "type": "string"
+                            },
+                            {
+                                "key": "username",
+                                "value": "id do usuario API",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "method": "DELETE",
+                    "header": [
+                        {
+                            "key": "ixcsoft",
+                            "value": "",
+                            "type": "text"
+                        }
+                    ],
+                    "url": {
+                        "raw": "https://HOST/webservice/v1/cliente/Id_a_deletar",
+                        "protocol": "https",
+                        "host": [
+                            "HOST"
+                        ],
+                        "path": [
+                            "webservice",
+                            "v1",
+                            "cliente",
+                            "Id_a_deletar"
+                        ]
+                    }
+                },
+                "response": []
+            },
+            {
+                "name": "Editar cliente",
+                "protocolProfileBehavior": {
+                    "disabledSystemHeaders": {
+                        "connection": true,
+                        "accept-encoding": true,
+                        "accept": true,
+                        "user-agent": true
+                    }
+                },
+                "request": {
+                    "auth": {
+                        "type": "basic",
+                        "basic": [
+                            {
+                                "key": "password",
+                                "value": "token após o \" : \"",
+                                "type": "string"
+                            },
+                            {
+                                "key": "username",
+                                "value": "id do usuario API",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "method": "PUT",
+                    "header": [
+                        {
+                            "key": "ixcsoft",
+                            "value": "",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "{\n    \"razao\": \"\",\n    \"fantasia\": \"\",\n    \"tipo_assinante\": \"3\",\n    \"id_tipo_cliente\": \"\",\n    \"tipo_pessoa\": \"F\",\n    \"cnpj_cpf\": \"\",\n    \"ie_identidade\": \"\",\n    \"rg_orgao_emissor\": \"\",\n    \"inscricao_municipal\": \"\",\n    \"contribuinte_icms\": \"N\",\n    \"nacionalidade\": \"Brasileiro\",\n    \"cidade_naturalidade\": \"\",\n    \"estado_nascimento\": \"\",\n    \"data_nascimento\": \"\",\n    \"estado_civil\": \"\",\n    \"isuf\": \"\",\n    \"ativo\": \"S\",\n    \"filial_id\": \"\",\n    \"Sexo\": \"\",\n    \"profissao\": \"\",\n    \"grau_satisfacao\": \"\",\n    \"idx\": \"\",\n    \"data_cadastro\": \"\",\n    \"tipo_cliente_scm\": \"01\",\n    \"convert_cliente_forn\": \"N\",\n    \"ativo_serasa\": \"\",\n    \"permite_armazenar_cartoes\": \"N\",\n    \"id_condominio\": \"\",\n    \"bloco\": \"\",\n    \"apartamento\": \"\",\n    \"cep\": \"\",\n    \"cif\": \"\",\n    \"endereco\": \"\",\n    \"numero\": \"\",\n    \"complemento\": \"\",\n    \"bairro\": \"\",\n    \"cidade\": \"\",\n    \"referencia\": \"\",\n    \"moradia\": \"\",\n    \"latitude\": \"\",\n    \"longitude\": \"\",\n    \"cep_cob\": \"\",\n    \"endereco_cob\": \"\",\n    \"numero_cob\": \"\",\n    \"bairro_cob\": \"\",\n    \"cidade_cob\": \"\",\n    \"complemento_cob\": \"\",\n    \"referencia_cob\": \"\",\n    \"fone\": \"\",\n    \"telefone_comercial\": \"\",\n    \"id_operadora_celular\": \"\",\n    \"telefone_celular\": \"\",\n    \"whatsapp\": \"\",\n    \"ramal\": \"\",\n    \"email\": \"\",\n    \"email_opa\": \"\",\n    \"contato\": \"\",\n    \"website\": \"\",\n    \"skype\": \"\",\n    \"hotsite_email\": \"\",\n    \"senha\": \"\",\n    \"acesso_automatico_central\": \"P\",\n    \"hotsite_acesso\": \"2\",\n    \"crm\": \"N\",\n    \"id_candato_tipo\": \"\",\n    \"id_concorrente\": \"\",\n    \"id_perfil\": \"\",\n    \"responsavel\": \"\",\n    \"status_prospeccao\": \"C\",\n    \"crm_data_novo\": \"\",\n    \"crm_data_sondagem\": \"\",\n    \"crm_data_apresentando\": \"\",\n    \"crm_data_negociando\": \"\",\n    \"crm_data_vencemos\": \"\",\n    \"crm_data_perdemos\": \"\",\n    \"crm_data_abortamos\": \"\",\n    \"crm_data_sem_porta_disponivel\": \"\",\n    \"crm_data_sem_viabilidade\": \"\",\n    \"pipe_id_organizacao\": \"\",\n    \"foto_cartao\": \"\",\n    \"participa_cobranca\": \"S\",\n    \"num_dias_cob\": \"\",\n    \"participa_pre_cobranca\": \"S\",\n    \"cob_envia_email\": \"S\",\n    \"cob_envia_sms\": \"S\",\n    \"id_conta\": \"\",\n    \"cond_pagamento\": \"\",\n    \"id_vendedor\": \"\",\n    \"tabela_preco\": \"\",\n    \"deb_automatico\": \"\",\n    \"deb_agencia\": \"\",\n    \"deb_conta\": \"\",\n    \"codigo_operacao\": \"\",\n    \"tipo_pessoa_titular_conta\": \"F\",\n    \"cnpj_cpf_titular_conta\": \"\",\n    \"ultima_atualizacao\": \"CURRENT_TIMESTAMP\",\n    \"emp_empresa\": \"\",\n    \"emp_cnpj\": \"\",\n    \"emp_cep\": \"\",\n    \"emp_endereco\": \"\",\n    \"emp_cidade\": \"\",\n    \"emp_fone\": \"\",\n    \"emp_cargo\": \"\",\n    \"emp_remuneracao\": \"\",\n    \"emp_data_admissao\": \"\",\n    \"nome_pai\": \"\",\n    \"cpf_pai\": \"\",\n    \"identidade_pai\": \"\",\n    \"nascimento_pai\": \"\",\n    \"nome_mae\": \"\",\n    \"cpf_mae\": \"\",\n    \"identidade_mae\": \"\",\n    \"nascimento_mae\": \"\",\n    \"quantidade_dependentes\": \"\",\n    \"nome_conjuge\": \"\",\n    \"fone_conjuge\": \"\",\n    \"cpf_conjuge\": \"\",\n    \"rg_conjuge\": \"\",\n    \"data_nascimento_conjuge\": \"\",\n    \"nome_contador\": \"\",\n    \"telefone_contador\": \"\",\n    \"orgao_publico\": \"N\",\n    \"im\": \"\",\n    \"nome_representante_1\": \"\",\n    \"cpf_representante_1\": \"\",\n    \"identidade_representante_1\": \"\",\n    \"nome_representante_2\": \"\",\n    \"cpf_representante_2\": \"\",\n    \"identidade_representante_2\": \"\",\n    \"iss_classificacao_padrao\": \"99\",\n    \"pis_retem\": \"S\",\n    \"cofins_retem\": \"S\",\n    \"csll_retem\": \"S\",\n    \"irrf_retem\": \"S\",\n    \"cli_desconta_iss_retido_total\": \"S\",\n    \"ref_com_empresa1\": \"\",\n    \"ref_com_fone1\": \"\",\n    \"ref_com_empresa2\": \"\",\n    \"ref_com_fone2\": \"\",\n    \"ref_pes_nome1\": \"\",\n    \"ref_pes_fone1\": \"\",\n    \"ref_pes_nome2\": \"\",\n    \"ref_pes_fone2\": \"\",\n    \"obs\": \"\",\n    \"alerta\": \"\" \n}",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "https://HOST/webservice/v1/cliente/Id_a_editar",
+                        "protocol": "https",
+                        "host": [
+                            "HOST"
+                        ],
+                        "path": [
+                            "webservice",
+                            "v1",
+                            "cliente",
+                            "Id_a_editar"
+                        ]
+                    }
+                },
+                "response": []
+            },
+            {
+                "name": "Listar cliente",
+                "protocolProfileBehavior": {
+                    "disabledSystemHeaders": {
+                        "connection": true,
+                        "accept": true,
+                        "accept-encoding": true,
+                        "user-agent": true
+                    }
+                },
+                "request": {
+                    "auth": {
+                        "type": "basic",
+                        "basic": [
+                            {
+                                "key": "password",
+                                "value": "token após o \" : \"",
+                                "type": "string"
+                            },
+                            {
+                                "key": "username",
+                                "value": "id do usuario API",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "method": "POST",
+                    "header": [
+                        {
+                            "key": "ixcsoft",
+                            "value": "listar",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text",
+                            "disabled": true
+                        }
+                    ],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [
+                            {
+                                "key": "qtype",
+                                "value": "cliente.id",
+                                "type": "text"
+                            },
+                            {
+                                "key": "query",
+                                "value": "0",
+                                "type": "text"
+                            },
+                            {
+                                "key": "oper",
+                                "value": ">",
+                                "type": "text"
+                            },
+                            {
+                                "key": "page",
+                                "value": "1",
+                                "type": "text"
+                            },
+                            {
+                                "key": "rp",
+                                "value": "20",
+                                "type": "text"
+                            },
+                            {
+                                "key": "sortname",
+                                "value": "cliente.id",
+                                "type": "text"
+                            },
+                            {
+                                "key": "sortorder",
+                                "value": "asc",
+                                "type": "text"
+                            }
+                        ],
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "https://HOST/webservice/v1/cliente",
+                        "protocol": "https",
+                        "host": [
+                            "HOST"
+                        ],
+                        "path": [
+                            "webservice",
+                            "v1",
+                            "cliente"
+                        ]
+                    }
+                },
+                "response": []
+            }
+        ],
+        "protocolProfileBehavior": {}
+    }</code></pre>
+        <button class="btn btn-danger" id="copiar" onclick="copiarCodigo('teste')">Copiar</button>
+    </div> -->
+
+    <script>
+        function mostrar_data_hora() {
+            let data = new Date;
+            document.getElementById('datahora').innerHTML = 'Dia ' + data.getDate() + '/' + '0' + (data.getMonth() + 1) + '/' + data.getFullYear() + ' Hora ' + data.getHours() + ':' + data.getMinutes() + ':' + data.getSeconds();
+        }
+
+        let cont = 0
+        function incrementar_contador() {
+            cont = cont + 1;
+            document.getElementById('contador').innerHTML = cont;
+        }
+
+        function excluir_botao() {
+            let botao = document.getElementById('botao-vermelho');
+            document.getElementById('jumbo-botao').removeChild(botao);
+
+        }
+        function criar_botao() {
+            let botao = document.createElement('button');
+            botao.className = 'btn btn-info';
+            botao.innerHTML = 'filho';
+            document.getElementById('jumbo-criar-botao').appendChild(botao);
+        }
+        function criar_botao10() {
+            for (let i = 0; i < 10; i++) {
+                let botao = document.createElement('button');
+                botao.className = 'btn btn-info';
+                botao.innerHTML = 'filho';
+                document.getElementById('jumbo-criar-botao10').appendChild(botao);
+            }
+        }
+
+        function calcular_nota() {
+            let m1 = document.getElementById('n1').value;
+            let m2 = document.getElementById('n2').value;
+            let m3 = document.getElementById('n3').value;
+            let media = (parseInt(m1) + parseInt(m2) + parseInt(m3))/3;
+            if(media>=6){
+                document.getElementById('media').innerHTML = 'Aprovado - Media: ' + media;
+            }else{
+                document.getElementById('media').innerHTML = 'Reprovado - Media: ' + media;
+            }    
+        }
+
+        function calcular_tabuada() {
+            var tab = Array();
+            var val = document.getElementById('n5').value;
+            for (let i = 0; i <= 10; i++) {
+                let h1 = document.createElement('h1');
+                h1.id = 'tabuada';
+                document.getElementById('jumbo-tabuada').appendChild(h1); 
+                tab[i] = i * parseInt(val);
+                h1.innerHTML = val + '*' + i + '=' + tab[i];           
+            }
+        }
+
+        function idade_nadador() {
+            let I1 = document.getElementById('idade').value;
+            if(I1 >= 5 && I1 <=7){
+                document.getElementById('classe').innerHTML = 'Infantil';
+            }else if(I1 >= 8 && I1 <= 13){
+                document.getElementById('classe').innerHTML = 'Juvenil';
+            }else if(I1 >= 14 && I1 <= 17){
+                document.getElementById('classe').innerHTML = 'Adolescente';
+            }else if(I1 >= 18){
+                document.getElementById('classe').innerHTML = 'Adulto';
+            }
+        }
+
+        function finalistas() {
+            let t1 = document.getElementById('t1').value;
+            let t2 = document.getElementById('t2').value;
+            let t3 = document.getElementById('t3').value;
+            if(parseFloat(t1) > parseFloat(t2) && parseFloat(t2) > parseFloat(t3)){
+                document.getElementById('medalhas').innerHTML = 'finalista 1 - medalha de ouro /' + 'finalista 2 - medalha de prata /' + 'finalista 3 - medalha de bronze';
+            }else if(parseFloat(t1) > parseFloat(t3) && parseFloat(t3) > parseFloat(t2)){
+                document.getElementById('medalhas').innerHTML = 'finalista 1 - medalha de ouro /' + 'finalista 3 - medalha de prata /' + 'finalista 2 - medalha de bronze';
+            }else if(parseFloat(t2) > parseFloat(t1) && parseFloat(t1) > parseFloat(t3)){
+                document.getElementById('medalhas').innerHTML = 'finalista 2 - medalha de ouro /' + 'finalista 1 - medalha de prata /' + 'finalista 3 - medalha de bronze';
+            }else if(parseFloat(t2) > parseFloat(t3) && parseFloat(t3) > parseFloat(t1)){
+                document.getElementById('medalhas').innerHTML = 'finalista 2 - medalha de ouro /' + 'finalista 3 - medalha de prata /' + 'finalista 1 - medalha de bronze';
+            }else if(parseFloat(t3) > parseFloat(t1) && parseFloat(t1) > parseFloat(t2)){
+                document.getElementById('medalhas').innerHTML = 'finalista 3 - medalha de ouro /' + 'finalista 1 - medalha de prata /' + 'finalista 2 - medalha de bronze';
+            }else if(parseFloat(t3) > parseFloat(t2) && parseFloat(t2) > parseFloat(t1)){
+                document.getElementById('medalhas').innerHTML = 'finalista 3 - medalha de ouro /' + 'finalista 2 - medalha de prata /' + 'finalista 1 - medalha de bronze';
+            }
+        
+               
+        }
+
+        function montar_album() {
+            var mostra_album = Array();
+            var album = ['img1.jpeg','img2.jpeg','img3.jpeg','img4.jpeg','img5.jpeg','img6.jpeg','img7.jpeg','img8.jpeg','img9.jpeg','img10.jpeg'];
+            var raiz = './imagens/';
+            for (let i = 0; i <= 10; i++) {
+                let img = document.createElement('img');
+                img.id = 'album';
+                document.getElementById('jumbo-album').appendChild(img); 
+                mostra_album[i] = raiz + album[i];
+                img.src = mostra_album[i]           
+            }
+        }
+        // function copiarCodigo(botao) {
+        //     let c = document.getElementById(botao);
+        //     let input = document.createElement("input");
+        //     input.id = "inp";
+        //     input.value = JSON.parse(c.textContent[0]);
+        //     c.appendChild(input);
+
+        //     let copy = document.getElementById('inp');
+        //     copy.select();
+        //     document.execCommand("Copy");
+        //     if (copy) {
+        //         alert("Texto copiado com sucesso");
+        //     } else {
+        //         alert("Erro - Texto não copiado");
+        //     }
+        //     c.removeChild(input);
+
+        // }
+
+    </script>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="./bootstrap/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
